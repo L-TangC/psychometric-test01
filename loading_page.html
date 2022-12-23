@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>你是豆豆哪邊？</title>
+</head>
+<body>
+    <div class="qus_wrap">
+        <div class="header">
+            <div class="left">
+            </div>
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div class="offical_link">
+                <a target="_blank" href="https://lihi2.cc/RXZ0S">
+                    <img id="offical_hover" src="image/offical_link_btn.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="qus_content">
+                <div class="qus_box">
+                    <div class="winTop">
+                        <img src="image/wintop_img01.png" alt="">
+                        <img src="image/wintop_img02.png" alt="">
+                        <img src="image/wintop_img03.png" alt="">
+                    </div>
+                    <div class="winBox">
+                        <div class="ansbox">
+                            <img src="image/魔豆loading.gif" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_btn">
+                    <a href="homePage.html">
+                        <input type="button" value="回上一題">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer"></div>
+        <div class="social_sideBar">
+            <a target="_blank" href="https://discord.com/invite/model-mev">
+                <img id="dc_hover" src="image/dc_icon.png" alt="">
+            </a>
+            <a target="_blank" href="https://mobile.twitter.com/mev_official">
+                <img id="twit_hover" src="image/twit_icon.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/model_eros_village/">
+                <img id="ig_hover" src="image/ig_icon.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        var lines = this.responseText.split("\n");
+        document.getElementById("your-h1-element").innerHTML = lines[0];
+      }
+    };
+    xhttp.open("GET", "txt.txt", true);
+    xhttp.send();
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        var lines = this.responseText.split("\n");
+        document.getElementById("your-ansA-element").innerHTML = lines[0];
+      }
+    };
+    xhttp.open("GET", "txt_02.txt", true);
+    xhttp.send();
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        var lines = this.responseText.split("\n");
+        document.getElementById("your-ansB-element").innerHTML = lines[0];
+      }
+    };
+    xhttp.open("GET", "txt_03.txt", true);
+    xhttp.send();
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        var lines = this.responseText.split("\n");
+        document.getElementById("your-ansC-element").innerHTML = lines[0];
+      }
+    };
+    xhttp.open("GET", "txt_04.txt", true);
+    xhttp.send();
+</script>
+</html>
